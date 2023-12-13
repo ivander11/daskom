@@ -1,0 +1,18 @@
+void menulogin() {
+    int pilihanlogin;
+
+    printf("\nMENU\n");
+    printf("\n1. Login");
+    printf("\n2. Lupa Password");
+    printf("\nPilih menu : "); scanf("%d", &pilihanlogin);
+
+    switch(pilihanlogin){
+        case 1:
+        loginuser();
+        break;
+
+        case 2:
+        // lupapassword();
+        break;
+    }
+}
