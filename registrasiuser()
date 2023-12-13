@@ -1,0 +1,30 @@
+void registrasiuser() {
+    char username[50], password[50], nama[50], email[50], noTelepon[15];
+
+    printf("Silahkan Registrasi User\n\n");
+    printf("Username : ");
+    scanf("%s", username);
+
+    printf("Password : ");
+    scanf("%s", password);
+
+    printf("Nama Lengkap : ");
+    scanf("%s", nama);
+
+    printf("Email : ");
+    scanf("%s", email);
+
+    printf("No Telepon : ");
+    scanf("%s", noTelepon);
+
+    // Menyimpan data ke dalam file sekuensial
+    FILE *file = fopen("userdata.dat", "wb");
+    if (file != NULL) {
+        fprintf(file, "%s %s %s %s %s\n", username, password, nama, email, noTelepon);
+        fclose(file);
+        printf("Registrasi berhasil!\n");
+        loginuser();
+    } else {
+        printf("Error: Tidak dapat membuka file untuk penyimpanan data.\n");
+    }
+}
