@@ -1,0 +1,20 @@
+void profileUser(){
+    int Pilihmenu;
+    printf("Menu User:\n");
+    printf("1. Registrasi\n");
+    printf("2. Login\n");
+    printf("Pilih menu (1-2): ");
+    scanf("%d", &Pilihmenu);
+
+    switch(Pilihmenu){
+        case 1:
+        registrasiuser();
+        break;
+
+        case 2:
+        loginuser();
+        break;
+        
+    }
+
+}
