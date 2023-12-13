@@ -1,0 +1,20 @@
+void profileadmin(){
+
+    char username[50], password[50];
+    int statuslogin = 0; 
+    do {
+        printf("Silahkan masukkan username dan password\n\n");
+        printf("Username : "); gets(username);
+
+        printf("Password : "); gets(password);
+
+        // Memeriksa apakah username dan password admin sesuai
+        if (strcmp(username, "ADMIN") == 0 && strcmp(password, "admin123") == 0) {
+            printf("Login admin berhasil!\n");
+           //void menu_admin();
+            statuslogin = 1;  
+        } else {
+            printf("Login gagal. Username atau password salah. Silakan coba lagi.\n");
+        }
+    } while (statuslogin != 1);
+}
