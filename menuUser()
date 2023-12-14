@@ -1,0 +1,50 @@
+// Fungsi menu user
+void menuUser() {
+    int userChoice;
+
+    do {
+        printf("\n========== MENU USER ==========\n");
+        printf("1. Lihat Helpdesk\n");
+        printf("2. Lihat Jasa servis\n");
+        printf("3. Melakukan pemesanan\n");
+        printf("4. Lihat progress cucian\n");
+        printf("5. Melakukan pembayaran\n");
+        printf("6. kembali ke menu utama\n");
+        printf("Pilih menu: ");
+        scanf("%d", &userChoice);
+
+        switch (userChoice) {
+            case 1:
+                // Implementasi lihat helpdesk di sini
+                lihatHelpdesk();
+                break;
+
+            case 2:
+                // Implementasi lihat jasa servis di sini
+                lihatJasaServis();
+                break;
+
+            case 3:
+                // Implementasi melakukan pemesanan di sini
+                melakukanPemesanan();
+                break;
+
+            case 4:
+                // Implementasi lihat progress cucian di sini
+                lihatProgressCucian();
+                break;
+
+            case 5:
+                // Iplementasi melakukan pembayaran disini
+                melakukanPembayaran();
+            
+            case 6:
+                printf("Kembali ke Menu Utama.\n");
+                break;
+
+            default:
+                printf("menu tidak ada, Silakan coba lagi.\n");
+        }
+
+    } while (userChoice != 6);
+}
