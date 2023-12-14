@@ -8,6 +8,15 @@ void registrasiuser();
 void menulogin();
 void loginuser();
 // void menuUser();
+
+// Deklarasi fungsi-fungsi
+int loginAdmin();
+void menuAdmin();
+void tambahKendaraan();
+void lihatDataUser();
+void lihatProgressKendaraan();
+void UbahProgress();
+
 // Definisi struktur untuk kendaraan
 struct Kendaraan {
     char jenis[50];
