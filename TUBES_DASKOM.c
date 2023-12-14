@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 void profileadmin();
 void profileUser();
@@ -7,6 +8,20 @@ void registrasiuser();
 void menulogin();
 void loginuser();
 // void menuUser();
+// Definisi struktur untuk kendaraan
+struct Kendaraan {
+    char jenis[50];
+    float harga;
+    char jenisService[50];
+};
+// Definisi struktur untuk pesanan user
+struct Pesanan {
+    char username[50];
+    char jenisKendaraan[50];
+    char jenisService[50];
+    float totalPembayaran;
+    char progress[50];
+};
 
 int main() {
     int pilihan;
