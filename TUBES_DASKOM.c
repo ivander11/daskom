@@ -221,12 +221,12 @@ void menuAdmin() {
                 break;
 
             case 3:
-                // Implementasi lihat data kendaraan di sini
-                lihatProgessKendaraan();
+                // Implementasi lihat progress kendaraan di sini
+                lihatProgressKendaraan();
                 break;
 
             case 4:
-                // Implementasi lihat dan ubah progress cucian user di sini
+                // Implementasi ubah progress cucian user di sini
                 UbahProgress();
                 break;
 
@@ -310,7 +310,7 @@ void UbahProgress() {
             printf("Masukkan progress baru: ");
             scanf("%s", readUser.progress);
 
-            fseek(fileUser, -sizeof(struct Pesanan), SEEK_CUR);
+            fseek(fileUser, sizeof(struct Pesanan), SEEK_CUR);
             fwrite(&readUser, sizeof(struct Pesanan), 1, fileUser);
 
             printf("Progress Cucian berhasil diubah.\n");
@@ -358,7 +358,7 @@ int main() {
                 break;
 
             case 4:
-                lihatDataKendaraan();
+                lihatProgressKendaraan();
                 break;
 
             case 5:
