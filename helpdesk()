@@ -1,4 +1,3 @@
-#include <stdio.h>
 void helpdesk() {
     int pilihPanduan;
 
@@ -13,19 +12,19 @@ void helpdesk() {
 
        switch (pilihPanduan) {
         case 1:
-            printf("panduan registrasi dan login\n");
+            printf("Panduan registrasi dan login:\n 1.Pada tahap registrasi masukkan ussername, password, nama lengkap, email, alamat, & telepon\n 2. Pada tahap login masukkan ussername & password\n ");
             break;
     
         case 2:
-            printf("panduan pemesanan\n");
+            printf("Panduan pemesanan:\n masukkan layanan jasa servis yang di inginkan\n ");
             break;
         
         case 3:
-            printf("panduan pembayaran\n");
+            printf("Panduan pembayaran:\n masukkan nama pemesan & jasa pesanan\n" );
             break;
 
         case 4:
-            printf("kembali ke menu utama\n");
+            printf("Kembali ke menu utama\n");
             break;
 
         default:
