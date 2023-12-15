@@ -1,0 +1,37 @@
+#include <stdio.h>
+void helpdesk() {
+    int pilihPanduan;
+
+    do{
+       printf("\nPanduan Aplikasi\n");
+       printf("1. Panduan registrasi dan login\n");
+       printf("2. Panduan pemesanan\n");
+       printf("3. Panduan pembayaran\n");
+       printf("4. Kembali ke menu utama\n");
+       printf("Pilih Panduan: ");
+       scanf("%d", &pilihPanduan);
+
+       switch (pilihPanduan) {
+        case 1:
+            printf("panduan registrasi dan login\n");
+            break;
+    
+        case 2:
+            printf("panduan pemesanan\n");
+            break;
+        
+        case 3:
+            printf("panduan pembayaran\n");
+            break;
+
+        case 4:
+            printf("kembali ke menu utama\n");
+            break;
+
+        default:
+            printf("pilihan tidak ada, silahkan coba lagi\n");
+
+        }
+
+    }while (pilihPanduan != 4);
+}
